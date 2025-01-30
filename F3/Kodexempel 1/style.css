@@ -1,0 +1,38 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2 {
+    color: rgb(106,90,205);
+    font-weight: bold;
+}
+
+h2{
+    font-size:20px;
+}
+
+a{
+    color:dodgerblue;
+    text-decoration: none;
+}
+
+.ingred {
+    background-color: lavender;
+    padding: 1rem;
+}
+
+img{
+    width: 40%;
+    height:auto;
+
+}
+main {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+main>div {
+    width:40%;
+}

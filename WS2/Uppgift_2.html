@@ -4,6 +4,96 @@
 		<title>Responsiv sida</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			* {
+				box-sizing: border-box;
+				border: 1px solid red;
+			}
+
+			ul {
+				list-style-type: none;
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				background-color: black;
+			}
+
+			ul>li {
+				padding: 0.5rem;
+				padding-right: 4rem;
+			}
+
+			ul>li>a {
+				font-family: sans-serif;
+				color:white;
+				font-size: 1.5rem;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			.menu-item {
+				display: block;
+			}
+
+			#hidden-dropdown {
+				display: none;
+				position: relative;
+				padding-right: 20px;
+			}
+
+			ul>li>ul {
+				display: none;
+				position:absolute;
+				top: 100%;
+				right: 0;
+				width:200px;
+			}
+
+			@media (max-width: 415px) {
+				#hidden-dropdown {
+					display: block;
+				}
+
+				.menu-item {
+					display: none;
+				}
+
+				ul>li:hover>ul {
+					display: block;
+				}
+
+
+
+
+			}
+/*
+			article.jumbotron {
+				background-color: lightskyblue;
+				text-align: center;
+				border: 1px solid darkblue;
+				border-radius: 7px;
+			}
+			h1,p {
+				margin: 0;
+				padding: 0;
+			}
+
+			h1{
+				margin-bottom:25px;
+			}
+*/
+
+			article.jumbotron {
+				display: flex;
+				flex-direction:column;
+				align-items: center;
+			}
+
+
+
+
+		</style>
+
 
 	</head>
 	<body>
